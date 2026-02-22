@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:rgb(81, 162, 187);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:rgb(22, 17, 92);
     padding: 20px;
 }
 
@@ -10,7 +10,7 @@ h1 {
 }
 
 .car-card {
-    background:white;
+    background:rgb(84, 99, 167);
     padding: 15px;
     margin-top: 20px;
     border-radius: 15px;
@@ -21,14 +21,13 @@ h1 {
     width: 100%; 
     border-radius:15px;
     margin-bottom:10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 10);
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 450px);
-    gap:20px;
-    justify-content: center;
-    
-
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
+
 
