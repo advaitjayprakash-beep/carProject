@@ -14,7 +14,7 @@ body {
     border-radius: 20px;
     margin-bottom: 25px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-bottom: 2px solid #e63946;
+    border-bottom: 2px solid #5c76eb;
 }
 
 .navbar h1 {
@@ -43,7 +43,7 @@ body {
 }
 
 .nav-links a:hover {
-    background-color: rgb(230, 57, 70, 0.2);
+    background-color: rgb(92, 118, 235, 0.2);
     transform: translateY(-2px);
 }
 
@@ -59,7 +59,7 @@ body > p {
 }
 
 .car-card h2 {
-    color: #e63946;
+    color: #5c76eb;
 }
 
 .car-card h3 {
@@ -67,7 +67,7 @@ body > p {
 }
 
 .navbar-title {
-    color:#e63946;
+    color:#5c76eb;
     margin: 0;
 }
 
@@ -87,7 +87,7 @@ body > p {
 .car-card:hover {
     transform: translateY(-4px);
     box-shadow:0 8px 25px  rgb(230, 57, 70, 0.15);
-    border-color:  rgb(230, 57, 70, 0.3);
+    border-color:  rgb(92, 118, 235, 0.3);
 }
 
 .car-card img {
