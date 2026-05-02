@@ -86,7 +86,7 @@ body > p {
 
 .car-card:hover {
     transform: translateY(-4px);
-    box-shadow:0 8px 25px  rgb(230, 57, 70, 0.15);
+    box-shadow:0 8px 25px  rgb(92, 118, 235, 0.15);
     border-color:  rgb(92, 118, 235, 0.3);
 }
 
@@ -116,4 +116,72 @@ body > p {
     border: 1px solid rgba (255,255,255,0.06);
     
 
+}
+
+.contact-section {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.contact-form {
+    margin-top: 12px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    color:#f0f0f0;
+    font-weight: 600;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: #151515;
+    color:#f5f5f5;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    margin-top: 9px;
+    padding: 10px 16px;
+    border-radius: 15px;
+    border: none;
+    background: #5c76eb;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: #3d53b6bb;
+    transform: translateY(-1px);
+}
+
+.contact-status {
+    min-height: 24px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.contact-status.sending {
+    color: #e7eb02;
+}
+
+.contact-status.sent {
+    color: #1deb02;
+}
+
+.contact-status.error {
+    color: #eb0202;
 }
