@@ -194,7 +194,7 @@ body > p {
     position: fixed; 
     inset: 0;
     background: rgba(0, 0, 0, 0.75);
-    /* display: none; */
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -205,7 +205,7 @@ body > p {
     display: flex;
 }
 
-.card-model-content{
+.car-model-content{
     background: #1e1e1e;
     width: min(700px, 100%);
     max-height: 85vh;
@@ -215,7 +215,7 @@ body > p {
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.card-model-close{
+.car-model-close{
     background: #5c76eb;
     color: #fff;
     border: none;
@@ -225,6 +225,6 @@ body > p {
     font-weight: 700;
 }
 
-.card-model-content ul{
+.car-model-content ul{
     padding-left: 20px;
 }

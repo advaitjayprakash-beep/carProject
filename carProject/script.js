@@ -41,7 +41,7 @@ if (carCards.length && carModel && carModelClose && carModelTitle && carModelNam
         card.addEventListener("click", function () {
             const titleText = card.querySelector("h2")?.textContent || "Car Spotlight";
             const carNameText = card.querySelector("p strong")?.parentElement?.textContent || "Car name not available";
-            const descriptionLine = card.querySelector("p")[1]?.textContent || "No description available";
+            const descriptionLine = card.querySelectorAll("p")[1]?.textContent || "No description available";
             const specItems = card.querySelectorAll("ul li");
 
             carModelTitle.textContent = titleText;
@@ -63,7 +63,7 @@ if (carCards.length && carModel && carModelClose && carModelTitle && carModelNam
         carModel.classList.remove("open");
     });
 
-    carModelName.addEventListener("click", function (event){
+    carModel.addEventListener("click", function (event){
         if (event.target === carModel){
             carModel.classList.remove("open");
         }
