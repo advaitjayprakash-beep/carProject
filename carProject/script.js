@@ -28,4 +28,44 @@ if (form && statusText){
     });
 }
 
+const carCards = document.querySelectorAll(".car-card");
+const carModel = document.getElementById("car-model")
+const carModelClose = document.getElementById("car-model-close")
+const carModelTitle = document.getElementById("car-model-title")
+const carModelName = document.getElementById("car-model-car-name")
+const carModelDescription = document.getElementById("car-model-description")
+const carModelSpecs = document.getElementById("car-model-specs")
 
+if (carCards.length && carModel && carModelClose && carModelTitle && carModelName && carModelDescription && carModelSpecs) {
+    carCards.forEach(function (card){
+        card.addEventListener("click", function () {
+            const titleText = card.querySelector("h2")?.textContent || "Car Spotlight";
+            const carNameText = card.querySelector("p strong")?.parentElement?.textContent || "Car name not available";
+            const descriptionLine = card.querySelector("p")[1]?.textContent || "No description available";
+            const specItems = card.querySelectorAll("ul li");
+
+            carModelTitle.textContent = titleText;
+            carModelName.textContent = carNameText;
+            carModelDescription.textContent = descriptionLine;
+            carModelSpecs.innerHTML = "";
+
+            specItems.forEach(function (item){
+                const li = document.createElement("li");
+                li.textContent = item.textContent;
+                carModelSpecs.appendChild(li);
+            });
+
+            carModel.classList.add("open");
+        });
+    });
+
+    carModelClose.addEventListener("click", function (){
+        carModel.classList.remove("open");
+    });
+
+    carModelName.addEventListener("click", function (event){
+        if (event.target === carModel){
+            carModel.classList.remove("open");
+        }
+    });
+}
