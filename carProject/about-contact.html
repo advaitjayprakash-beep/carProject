@@ -18,39 +18,54 @@
 
 
 
+    <main class="about-page">
+        <div class="car-card-about">
+            <h2>About Me</h2>
+            <p class="about-intro">Student, car-enthusiast</p>
+            <p>Hi, my name is Advait. I enjoy cars and learning about different high-performance vehicles. I created this website to share cars that I see on the road and to practice my web design skills.I especially like spotting cars from brands like BMW, Lamborghini, Ferrari, McLaren, and Mercedes-AMG. When I see an interesting car, I take a picture and add it to this website with some basic information about it.
+            I will keep updating this website as I spot more cars.</p>
 
-    <div class="car-card-about">
-        <h2>About Me</h2>
-        <p>Hi, my name is Advait. I enjoy cars and learning about different high-performance vehicles. I created this website to share cars that I see on the road and to practice my web design skills.I especially like spotting cars from brands like BMW, Lamborghini, Ferrari, McLaren, and Mercedes-AMG. When I see an interesting car, I take a picture and add it to this website with some basic information about it.
-        I will keep updating this website as I spot more cars.</p>
-    </div>
+            <h3 class="about-subhead">Favorite Brands</h3>
+            <ul class="brand-tags">
+                <li class="brand-tag">Mercedes</li>
+                <li class="brand-tag">BMW</li>
+                <li class="brand-tag">Lamborghini</li>
+                <li class="brand-tag">Mclaren</li>
+                <li class="brand-tag">Ferrari</li>
+            </ul>
+        </div>
 
-    <section id="contact" class="car-card-about contact-section">
-        <h2>Contact</h2>
-        <p>Contact me here</p>
-        <form id="contact-form" class="contact-form">
-            <label for="contact-name">Name</label>
-            <input type="text" id="contact-name" name="name" required>
-         
-            <br><br>
+        <section id="contact" class="car-card-about contact-section">
+            <h2>Contact</h2>
+            <p>Contact me here</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+                </div>
 
-            <label for="contact-subject">Subject</label>
-            <input type="text" id="contact-subject" name="subject" required>
 
-            <br><br>
-
-            <label for="contact-email">Email</label>
-            <input type="email" id="contact-email" name="email" required>
-
-            <br><br>    
-
-            <label for="contact-message">Message</label>
-            <textarea name="message" id="contact-message" rows="5" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-        <p id="contact-status" class="contact-status"></p>
-    </section>
+                <div class="form-group">
+                    <label for="contact-subject">Subject</label>
+                    <input type="text" id="contact-subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea name="message" id="contact-message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+            <p id="contact-status" class="contact-status"></p>
+    
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
